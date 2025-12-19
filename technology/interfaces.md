@@ -50,6 +50,8 @@
 ### 接口形式
 消息服务推送
 
+消息类型(msgType)：material-stock-lock
+
 ### 字段
 | fieldname | 类型 | 描述 | 详细信息 |
 | --- | --- | --- | --- |
@@ -66,6 +68,8 @@
 
 ### 接口形式
 消息服务推送
+
+消息类型(msgType)：material-stock-sync
 
 ### 字段
 | fieldname | 类型 | 描述 | 详细信息 |
