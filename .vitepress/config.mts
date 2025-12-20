@@ -25,6 +25,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '引言', link: '/technology/solution' },
+          { text: '单机版', link: '/technology/offline' },
           { text: '接口规范', link: '/technology/solution' },
           { text: '技术文档', link: '/technology/technology' },
           { text: '接口清单', link: '/technology/interfaces' }
