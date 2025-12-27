@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mdAtts from 'markdown-it-attrs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -36,5 +37,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  markdown: {
+    config(md) {
+      md.use(mdAtts)
+    }
   }
 })
