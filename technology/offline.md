@@ -4,9 +4,9 @@
 
 ## 安装方法
 下载指定环境的安装包
-* [测试环境](https://oss.jcdev.cc/WH_Vei_Offline_Test.zip)
+* [测试环境](https://oss.jcdev.cc/vei/offline/pre/VEIOfflineClient-win-Setup.exe)
   * 测试环境用于测试目的，用于验证单机版的有效性及了解对接详细操作之用。
-* [生产环境](https://oss.jcdev.cc/WH_Vei_Offline_Release.zip)
+* [生产环境](https://oss.jcdev.cc/vei/offline/pre/VEIOfflineClient-win-Setup.exe)
   * 生产环境是与万华系统对接的应用，**请务必不要在生产环境进行测试，或发送测试数据。**
 
 下载成功后双击安装程序进行安装，当安装成功后，在桌面上将看到"VEI单机版"图标![alt text](image-15.png){width=60px style="display:inline-block"}，双击即可执行程序：
