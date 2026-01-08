@@ -97,6 +97,7 @@ type = API_VEI_STOCK_MOVE
 | --- | --- | --- | --- |
 | vendor | string |  供应商编号 |  |
 | deviceId | string |  设备编号 | 单机版专用，对接版系统请忽略 |
+| olUuid | string | 唯一识别码 | 对接版专用，对接申请成功后，万华在发送的对接敏感信息中会附带该字段，在调用时返回该字段以确认身份 |
 | items | array |  行项目 |  |
 
 ##### items 行项目
