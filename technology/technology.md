@@ -87,8 +87,18 @@
 
 ## API 接口
 ### 环境配置
-API 接口包括测试与生产两个环境  
+API 接口包括测试与生产两个环境
 **测试与生产环境是通过 Http Header：X-Ca-Stage 进行区分的。如果未设置该消息头，默认会接入生产环境。因此请务必谨慎，确保不要接入错误的环境。**
+
+| HTTP 参数 | 值 |
+| --- | --- |
+| Host | api.whchem.com |
+| Port | 443 |
+| Path | /MM/01622/purapi |
+| TLS | 必需 |
+| URL | https://api.whchem.com/MM/01622/purapi |
+| Method | POST |
+| 密钥 | 需申请 |
 
 #### 测试环境
 测试环境主要用于供应商系统与万华系统进行联调使用。  
