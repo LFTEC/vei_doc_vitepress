@@ -3,13 +3,23 @@
 单机版适用于供应商没有系统，或系统中难以获取为万华备货的库存等无法通过系统对接的场景。使用单机版需要定期（由采购员指定）整理备货物资的最新情况，操作单机版系统上传至至万华系统。如果超过采购员指定的有效周期，则之前所有发送的备货信息都将被设置为无效库存，不参与VEI需求平库。
 
 ## 安装方法
-下载指定环境的安装包
-* [测试环境](https://oss.jcdev.cc/vei/offline/pre/VEIOfflineClient-win-Setup.exe)
-  * 测试环境用于测试目的，用于验证单机版的有效性及了解对接详细操作之用。
-* [生产环境](https://oss.jcdev.cc/vei/offline/pre/VEIOfflineClient-win-Setup.exe)
-  * 生产环境是与万华系统对接的应用，**请务必不要在生产环境进行测试，或发送测试数据。**
+### 前置条件
+单机版运行需要以下前置条件：
+* 操作系统：Windows 10 及以上
+* CPU：x64或x86 架构
+* 硬盘空间：C盘至少1G剩余空间
 
-下载成功后双击安装程序进行安装，当安装成功后，在桌面上将看到"VEI单机版"图标![alt text](image-15.png){width=60px style="display:inline-block"}，双击即可执行程序：
+下载指定环境的安装包
+* **测试环境**
+  * 测试环境用于测试目的，用于验证单机版的有效性及了解对接详细操作之用。
+  * [点击下载64位安装包](https://oss.jcdev.cc/vei/offline/win-x64/PRE/VEIOfflineClient_PRE-win-Setup.exe)
+  * [点击下载32位安装包](https://oss.jcdev.cc/vei/offline/win-x86/PRE/VEIOfflineClient_PRE-win-Setup.exe)
+* **正式环境**
+  * 正式环境是与万华生产系统对接的应用，在正式环境中上传的库存将作为备货物资被分配。**请务必不要在生产环境进行测试，或发送测试数据，由此造成的后果由供应商自行承担。**
+  * [点击下载64位安装包](https://oss.jcdev.cc/vei/offline/win-x64/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
+  * [点击下载32位安装包](https://oss.jcdev.cc/vei/offline/win-x86/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
+
+下载成功后双击安装程序进行安装，当安装成功后，在桌面上将看到"VEI单机版"图标![alt text](image-16.png){width=120px style="display:inline-block"}，双击即可执行程序：
 
 ## 激活应用
 当出现下面两种情况时，需要首先激活程序才能使用：
