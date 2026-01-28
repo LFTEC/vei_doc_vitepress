@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import mdAtts from 'markdown-it-attrs'
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,11 +26,17 @@ export default defineConfig({
         text: '技术指南',
         collapsed: false,
         items: [
-          { text: '引言', link: '/technology/solution' },
+          { text: '引言', link: '/technology/brief' },
           { text: '单机版', link: '/technology/offline' },
-          { text: '接口规范', link: '/technology/solution' },
-          { text: '技术文档', link: '/technology/technology' },
-          { text: '接口清单', link: '/technology/interfaces' }
+          {
+            text: '联机版',
+            collapsed: true,
+            items: [
+              { text: '对接规范', link: '/technology/solution' },
+              { text: '技术文档', link: '/technology/technology' },
+              { text: '接口清单', link: '/technology/interfaces' }
+            ]
+          }
         ]
       }
     ],
@@ -40,7 +47,8 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
-      md.use(mdAtts)
+      md.use(mdAtts);
+      md.use(mathjax3);
     }
   }
 })
