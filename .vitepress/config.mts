@@ -27,6 +27,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '引言', link: '/technology/brief' },
+          { text: '对接申请', link: '/technology/application' },
           { text: '单机版', link: '/technology/offline' },
           {
             text: '联机版',
