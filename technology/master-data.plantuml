@@ -1,0 +1,24 @@
+@startuml 主数据同步流程
+participant 万华系统 AS wanhua
+queue 消息队列 AS queue
+participant 供应商系统 AS vendor
+actor 人工 AS worker
+
+wanhua -> queue: 1.发送主数据信息
+activate queue
+queue -> vendor: 2.推送消息
+deactivate queue
+activate vendor
+vendor -> worker: 3. 人工对照关系
+activate worker
+worker --> vendor: 对照结果
+deactivate worker
+vendor -> vendor: 4. 存储对照关系
+vendor -> wanhua: 5. 发送全量库存
+activate wanhua
+wanhua --> vendor
+deactivate wanhua
+deactivate vendor
+
+
+@enduml
