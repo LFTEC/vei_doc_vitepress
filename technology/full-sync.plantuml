@@ -1,0 +1,13 @@
+@startuml 全量库存同步流程
+participant 供应商 AS vendor
+participant 万华 AS wanhua
+activate vendor
+vendor -> vendor: 计算库存信息
+vendor -> wanhua: 发送库存信息
+activate wanhua
+wanhua -> wanhua: 将库存置零
+wanhua -> wanhua: 更新库存
+wanhua --> vendor: 返回结果
+deactivate wanhua
+deactivate vendor
+@enduml

@@ -1,0 +1,19 @@
+@startuml 差异库存同步流程
+participant 万华 AS wanhua
+queue 消息队列 AS queue
+participant 供应商 AS vendor
+
+wanhua -> queue: 推送库存信息
+activate queue
+queue -> vendor: 推送库存信息
+deactivate queue
+activate vendor
+vendor -> vendor: 计算库存信息
+vendor -> vendor: 比较备货数量差异
+vendor -> wanhua: 发送库存差异信息
+activate wanhua
+wanhua -> wanhua: 更新库存
+wanhua --> vendor: 返回结果
+deactivate wanhua
+deactivate vendor
+@enduml
