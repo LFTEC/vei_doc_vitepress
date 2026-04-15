@@ -20,7 +20,16 @@ export default defineConfig({
       },
       {
         text: '业务指南',
-        collapsed: false
+        collapsed: false,
+        items: [
+          { text: '什么是VEI', link: '/business/brief' },
+          { text: '运作模式', link: '/business/process' },
+          { text: '对接优势', link: '/business/advantages' },
+          { text: '规则详解', link: '/business/rules' },
+          { text: '奖励机制', link: '/business/incentives' },
+          { text: '常见问题', link: '/business/faq' }
+
+        ]
       },
       {
         text: '技术指南',
@@ -37,7 +46,8 @@ export default defineConfig({
               { text: '技术文档', link: '/technology/technology' },
               { text: '接口清单', link: '/technology/interfaces' }
             ]
-          }
+          },
+          { text: '常见问题', link: '/technology/faq' }
         ]
       }
     ],
