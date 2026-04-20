@@ -103,18 +103,26 @@ type = API_VEI_STOCK_MOVE
 ##### items 行项目
 | fieldname | 类型 | 描述 | 详细信息 |
 | --- | --- | --- | --- |
-| material | string | 物料编号 | 万华内部物料号 |
-| matType | string | 物料类型 | prod 成品 <br> semi 半成品 |
+| material | string | 物料编号 | 万华内部物料号 <br> 如果matType='self'则为供应商自有物料号 |
+| materialDesc | string | 物料描述 | 物料描述。仅matType='self'时需要传入，且不能为空 |
+| matType | string | 物料类型 | prod 成品 <br> semi 半成品 <br> self 供应商自有物资 |
 | moveType | string | 移动类型 | increase 库存增加 <br> decrease 库存减少 <br> full 库存全量同步 |
 | quantity | dec(13,3) | 数量 | 正实数 |
 | unit | string | 基本单位 | |
 | text | string | 备注信息 | |
+| netPrice | dec(11,2) | 单价 | 两位小数的物料单价，仅matType='self'时需要传入，单价的单位必须为人民币 |
 
 传入的 quantity 必须为正数，库存的增加与减少需要通过 moveType 来发送  
 **moveType**根据传入值的不同，分三种情况：
 * **increase**：库存增加，此时需传输库存的增量。万华系统会记录库存增量的时间，为备库时间久这个考核指标提供数据支持
 * **decreate**：库存减少，此时需传输库存的减量。
 * **full**：库存全量同步。此时万华系统会清空该物资的原有库存量，并修改为全量同步的数量，此时备库时间也修改为当前日期
+
+新增传入供应商自有备库物资功能。该功能允许供应商上传非万华框架的备库库存。由于万华没有相关物料信息，因此需要传递供应商自己的物料号与物料描述。  
+当上传自有备库物资时，matType='self'。此时moveType必须传入'full'。material为供应商自己的物料号，需确保唯一性。materialDesc为供应商系统维护的物料描述。  
+同时必须传入quantity,unit,netPrice三个字段。
+
+由于供应商自有备库物资与万华系统没有关联，因此供应商何时上传这些库存由供应商系统自行决定，万华系统将仅保留最后一次上传的数值。请及时上传最新的库存以确保万华存储的库存的准确性。
 
 #### 响应字段
 | fieldname | 类型 | 描述 | 详细信息 |
