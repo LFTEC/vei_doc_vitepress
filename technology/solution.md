@@ -7,7 +7,7 @@
 
 第三，对接系统充分考虑未来的向后兼容性，我们会在后续的工作中持续更新，但是会尽量确保原来已对接的供应商无需立即配合更新才能使用。
 
-[联机版 Demo 下载](https://oss.jcdev.cc/WH_VEI_Online_Demo.zip)
+[联机版 Demo 下载](https://common-1252567852.cos.ap-chengdu.myqcloud.com/WH_VEI_Online_Demo.zip)
 供应商选择联机版对接方案，需要按本篇介绍的规范与将供应商的系统与万华系统进行对接。请通读本篇，了解详细的对接规范后，再进行供应商端系统的设计与修改。
 
 
