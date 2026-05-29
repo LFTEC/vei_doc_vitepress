@@ -12,12 +12,12 @@
 下载指定环境的安装包
 * **测试环境**
   * 测试环境用于测试目的，用于验证单机版的有效性及了解对接详细操作之用。
-  * [点击下载64位安装包](https://oss.jcdev.cc/vei/offline/win-x64/PRE/VEIOfflineClient_PRE-win-Setup.exe)
-  * [点击下载32位安装包](https://oss.jcdev.cc/vei/offline/win-x86/PRE/VEIOfflineClient_PRE-win-Setup.exe)
+  * [点击下载64位安装包](https://oss.lefu.sh.cn/vei/offline/win-x64/PRE/VEIOfflineClient_PRE-win-Setup.exe)
+  * [点击下载32位安装包](https://oss.lefu.sh.cn/vei/offline/win-x86/PRE/VEIOfflineClient_PRE-win-Setup.exe)
 * **正式环境**
   * 正式环境是与万华生产系统对接的应用，在正式环境中上传的库存将作为备货物资被分配。**请务必不要在生产环境进行测试，或发送测试数据，由此造成的后果由供应商自行承担。**
-  * [点击下载64位安装包](https://oss.jcdev.cc/vei/offline/win-x64/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
-  * [点击下载32位安装包](https://oss.jcdev.cc/vei/offline/win-x86/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
+  * [点击下载64位安装包](https://oss.lefu.sh.cn/vei/offline/win-x64/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
+  * [点击下载32位安装包](https://oss.lefu.sh.cn/vei/offline/win-x86/RELEASE/VEIOfflineClient_RELEASE-win-Setup.exe)
 
 下载成功后双击安装程序进行安装，当安装成功后，在桌面上将看到"VEI单机版"图标![alt text](image-16.png){width=120px style="display:inline-block"}，双击即可执行程序：
 
